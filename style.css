@@ -54,6 +54,10 @@ nav {
 
 }
 
-img.logo {
+img#logo {
     height: 2.625rem;
+}
+
+h1, p {
+    color: white;
 }
