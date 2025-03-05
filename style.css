@@ -1,0 +1,59 @@
+/* RESET =============================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+/* a {
+    text-decoration: none;
+  }
+   */
+/* img {
+    width: 100%;
+    height: auto;
+  } */
+
+input,
+button {
+  border: none;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: "Roboto", sans-serif;
+  line-height: 160%;
+  font-weight: 400;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ======================================================= */
+
+body {
+  background-color: black;
+}
+
+nav {
+  margin: 2.5rem 4.5rem;
+  width: fit-content;
+  height: 2.625rem;
+  background-color: red;
+
+  display: flex;
+  gap: 2.625rem;
+  align-items: center;
+
+}
+
+img.logo {
+    height: 2.625rem;
+}
