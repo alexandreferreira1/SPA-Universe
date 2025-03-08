@@ -112,11 +112,18 @@ div#app button:hover {
   color: #02799D;
 }
 
-/* ============================== Estiliza apenas a página home */
-div#app div.home {
+/* ============================== Centraliza a Home e a 404 */
+div#app div.center {
   text-align: center;
   margin-top: 10.75rem;
 }
+
+div#app div.center p {
+  margin: 1rem auto;
+
+}
+
+/* ============================== Estilização do active do menu */
 
 nav a.active {
   color: #FFFFFF;
