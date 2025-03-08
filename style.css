@@ -9,15 +9,10 @@ ul {
   list-style: none;
 }
 
-/* a {
+a {
     text-decoration: none;
   }
-   */
-/* img {
-    width: 100%;
-    height: auto;
-  } */
-
+   
 input,
 button {
   border: none;
@@ -28,8 +23,8 @@ input,
 textarea,
 button {
   font-family: "Roboto", sans-serif;
-  line-height: 160%;
   font-weight: 400;
+  font-size: 1rem;
 
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -38,26 +33,83 @@ button {
 
 /* ======================================================= */
 
+html {
+  height: 100vh;
+}
+
 body {
-  background-color: black;
+  background-image: url('./assets/mountains-universe-1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 80%;
+
+  height: 100%;
 }
 
 nav {
-  margin: 2.5rem 4.5rem;
-  width: fit-content;
-  height: 2.625rem;
-  background-color: red;
+  padding: 0 4.5rem;
+  width: 100%;
+  height: 7.625rem;
 
   display: flex;
   gap: 2.625rem;
   align-items: center;
-
 }
 
-img#logo {
-    height: 2.625rem;
+nav img#logo {
+  height: 2.625rem;
 }
 
-h1, p {
-    color: white;
+nav a {
+  font-size: 1.3544rem;
+  color: #C4C4CC;
+  transition: 0.4s;
+}
+
+nav a:hover, nav a.active {
+  color: #FFFFFF;
+  transform: scale(1.1)
+}
+
+div#app {
+  margin: 4rem 6.375rem;
+}
+
+div#app h1, p, button {
+  color: white;
+}
+
+div#app h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+div#app p {
+  width: 40.5rem;
+  font-size: 1.125rem;
+  line-height: 160%;
+  margin-top: 1rem;
+}
+
+div#app button {
+  background: none;
+  border: solid 2px #FFFFFF;
+  border-radius: 5px;
+
+  padding: .75rem 2rem;
+  margin-top: 1.5rem;
+
+  font-weight: 700;
+  font-size: .875rem;
+}
+
+div#app button:hover {
+  background-color: #FFFFFF;
+  color: black;
+}
+
+/* ============================== Estiliza apenas a página home */
+div#app div#home {
+  text-align: center;
+  margin-top: 10.75rem;
 }
