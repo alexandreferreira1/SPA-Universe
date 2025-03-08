@@ -103,13 +103,22 @@ div#app button {
   font-size: .875rem;
 }
 
+div#app button {
+  transition: 0.3s;
+}
+
 div#app button:hover {
   background-color: #FFFFFF;
-  color: black;
+  color: #02799D;
 }
 
 /* ============================== Estiliza apenas a página home */
-div#app div#home {
+div#app div.home {
   text-align: center;
   margin-top: 10.75rem;
+}
+
+nav a.active {
+  color: #FFFFFF;
+  transform: scale(1.1)
 }
