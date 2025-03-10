@@ -6,23 +6,18 @@ export class Router {
     this.routes[routeName] = page;
   }
 
-  // Links de Navegação do Menu
-  menu = document.querySelectorAll(".menu");
-
-  // Cria a função que remove a classe "active" dos itens do nav
-  removeActiveMenuItems() {
-    for (var i = 0; i < this.menu.length; i++) {
-      this.menu[i].classList.remove("active");
-    }
-  }
-
   // Funções que lidam com as rotas
-  insertRouteOnClick(event) {
+  insertRouteOnClick(event, menuItems) {
     event.preventDefault();
 
-    this.removeActiveMenuItems();
+    // Remove a classe "active" dos itens do nav (reset)
+    for (var i = 0; i < menuItems.length; i++) {
+      menuItems[i].classList.remove("active");
+    }
+
     // Insere na url o href da tag <a>
     window.history.pushState({}, "", event.target.href);
+    // Torna o link clicado como .active para estilização
     event.target.classList.add("active");
 
     this.handleRoute();

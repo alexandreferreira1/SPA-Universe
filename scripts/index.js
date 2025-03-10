@@ -18,10 +18,8 @@ const menuItems = document.getElementsByClassName("menu");
 
 // Adiciona o evento em todos itens do nav
 for (var i = 0; i < menuItems.length; i++) {
-  // menuItems[i].classList.remove("active");
   menuItems[i].addEventListener("click", (event) => {
-    router.insertRouteOnClick(event);
+    // Passando o menuItems como argumento para não precisar importar de novo dentro da função
+    router.insertRouteOnClick(event, menuItems);
   });
 }
-
-
