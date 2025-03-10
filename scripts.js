@@ -17,6 +17,7 @@ for (var i = 0; i < menu.length; i++) {
   });
 }
 
+// Remove a classe "active" dos itens do nav
 function removeActiveMenuItems() {
   for (var i = 0; i < menu.length; i++) {
     menu[i].classList.remove('active')
@@ -47,3 +48,6 @@ function handleRoute() {
 }
 
 handleRoute();
+
+// Chama a função ao clicar nos botões voltar/avançar do navegador
+window.onpopstate = () => handleRoute()
